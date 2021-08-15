@@ -1,0 +1,34 @@
+/* Cajas e inicio de propiedades 
+Box Model: 
+1. content - modificamos el content con el line-height
+2. padding - modificamos con padding
+3. border - modificamos con border
+4. margin - modificamos con margin
+*/
+
+* {
+    font-family: 'Lobster', cursive;   
+    font-weight: 100; 
+    font-size: 30px;
+}
+
+h2 {
+    background-color: #a22;
+    display: inline-block;
+    padding: 100px;
+    /* height: 100px;
+    width: 300px; */
+    /* el content-box anade height y width con el padding (haciendo la caja mas grande de lo que pusimos porque suma los 2 valores), mientras que border-box acomoda los padding y borders dentro del width*/
+    box-sizing: border-box;
+    /* el text-align center nos centra el contenido del texto */
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 2em;
+    border: 10px solid #000;
+    /* si queremos aumentar la intesidad de un box-shadow o text-shadow podemos duplicar el efecto poniendo los mismo valores despues de una coma */
+    box-shadow: 2px 4px 15px 0 #000;
+    /* el text-shadow es lo mismo que el box-shadow, sin el cuarto valor  */
+    text-shadow: 2px 2px 7px #fff, 2px 2px 7px #fff;
+    /* lo transformamos a una rotacion de x grados */
+    transform: rotate(45deg);
+}

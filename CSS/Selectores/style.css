@@ -1,0 +1,53 @@
+/* CSS Selector: 
+Universal - es * y selecciona a todos los elementos 
+De tipo - Simplemente son los que seleccionamos por elementos 
+clases - anadimos un atributo class dentro del elemento que querramos editar y lo llamamos en css con .
+id - es lo mismo que el class, pero es unico (no se usa el mismo id en mas de un elemento) y se llama en css con #
+Por atricuto - escogemos cualquier atributo con []
+Descendiente - seleccionamos elementos que estan dentro de otro elemento (childs)
+Pseudo-clases - Es editar en css un evento (hover) */
+
+/* universal
+* {
+    color: red;
+} */
+
+/* De tipo */
+h1 {
+    color: red;
+}
+
+ /* css */
+.titulo-h2 {
+    color: red;
+}
+
+/* id */
+#element-for-modify {
+    color: red;
+}
+
+/* atributos */
+[rancio = "sii"] {
+    color: red;
+}
+
+/* descendiente */
+h2 p {
+    color: red;
+}
+
+h2 b span {
+    color: red; 
+    /* los span se usan para poder encasillar una parte en especifica de un texto para poder editarla, son como los divs solo que los divs se utilizan para encasillar bloques y el span para lineas de texto */
+}
+
+/* pseudo-clase */
+h2 p:hover {
+    color: blue;
+}
+
+a:active {
+    color: green;
+    /* The :active selector is used to select and style the active link. A link becomes active when you click on it. It can be used on all elements, not only links. */
+}

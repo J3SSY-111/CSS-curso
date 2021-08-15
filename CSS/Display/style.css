@@ -1,0 +1,57 @@
+/* Display 
+Block 
+Inline
+
+Inline-block
+
+Las siguiente ya no se usan: 
+// Table 
+Inline-table
+List-item
+Table-cell
+Table-row
+Table-column //
+
+Grid
+Flex
+
+Inline-flex
+inline-grid
+
+
+
+Overflow: 
+Visible
+Auto - es si necesita el scroll pues se lo pone
+Scroll - le pone el scroll obligatoriamente
+
+*/
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+b {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 10px solid red;
+    background: yellow;
+    display: inline-block;
+}
+
+div {
+    margin: auto;
+    margin-top: 50px;
+    width: 320px;
+    height: 350px;
+    border: 4px solid red;
+    background: grey;
+    overflow: auto;
+}
+
+div:hover > b {
+    /* Esto hace que cuando le pasemos por encima al div hay un cambio en b. (lo anoto porque era algo que no sabia como hacerlo) */
+}

@@ -1,0 +1,40 @@
+/* Unidades de medida 
+Fijas: 
+- px (pixels)
+- cm (centimetros)
+- mm (milimetros)
+- pt (points)
+Relativas: 
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* medidas fijas */
+/* .contact-form__h2 {
+    font-size: 50px;
+    font-size: 50cm;
+    font-size: 50mm;
+    font-size: 50pt;
+}  */
+
+/* medidas relativas */
+.contact-form {
+    font-size: 25px;
+    /* Usualmente 1em son 16px, pero este numero lo podemos cambiar nosotros heredando la cantidad de pixeles que pusimos en el contenedor padre */
+    /* Esto de heredar funciona con todo lo que se pueda medir (padding o margin) */
+    
+    background-color: #000;
+    
+    /* el viewport width y el viewport heigth es una unidad de medida que utiliza el 100% del ancho de pantalla si le damos 100vw y el 100% del largo de la pantalla si le damos 100vh */
+    width: 50vw;
+    height: 50vh;
+}
+
+.contact-form__h2 {
+    font-size: 5em;
+    /* 1em son 16px (segun el navegador)*/
+}

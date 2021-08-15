@@ -1,0 +1,28 @@
+/* Especificidad 
+Rangos de jerarquia (Del menos importante al mas importante):
+1. pseudo-elementos y elementos 
+2. clases, pseudo-clases y atributos
+3. identificador (id)
+4. estilos en linea
+5. !Important
+*/
+
+.color-red {
+    color: red;
+}
+
+h1 {
+    color: green;
+}
+
+[ranciobich = "color-blue"] {
+    color: blue;
+}
+
+#color-white {
+    color: white;
+}
+
+h1 {
+    color: grey !important;
+}

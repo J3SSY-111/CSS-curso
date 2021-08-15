@@ -1,0 +1,192 @@
+/* Position 
+Cuando un elemento esta posicionado significa que va a afectar el flujo, el orden de html como las 4 cajas una despues de la otra, en orden. Cuando posicionamos un elemento le damos 5 nuevas propiedades (las propiedades top y left son las mas importantes): top
+bottom - empuja desde abajo la caja
+left - empuja desde la izquierda
+right - empuja desde la derecha 
+z-index - si 2 o mas elementos ocupan espacio en comun, el z-index define cual va a estar por encima del otro dejandose llevar de quien tenga el valor mayor. 
+
+STATIC - 
+RELATIVE - cuando le damos un relative la caja conserva su espacio y comienza a moverse desde el inicio de la caja (Tambien podemos darle numero negativos)
+ABSOLUTE - es lo mismo que el relative con la diferencia de que el espacio no esta reservado, por eso vemos que la caja3 esta debajo de la caja2. Si no definimos top, bottom, left o right, el punto de referencia es donde se supone que vaya el elemento (no va a haber cambio), pero si uno de estos esta definido, toma como punto de referencia el viewport (podemos agrandarlo con f11). Ejemplo: top: 0; se pega a la parte de arriba de la pagina. Esto ultimo ocurre si el padre no esta posicionado, sino toma como referencia el padre.
+FIXED - es como el absolute, pero se queda fijo en su lugar aun cuando le demos scroll a la pagina (se usa para los nav y para las promo)
+STICKY - es como un relative y fixed juntos porque ocupa espacio, pero se mantiene en el mismo lugar sin importar si se usa el scroll. Los top, bottom, left y right funcionan como posicion en la que se tienen que detener
+*/
+
+/* * {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+} */
+
+/* Position relative */
+/* div {
+    width: 160px;
+    height: 160px;
+    display: block;
+    background: yellow;
+} */
+
+/* .caja1 {
+    background-color: orange;
+} */
+
+/* Por logica la caja3 va a estar por encima de la caja2 porque primero posicionamos caja2 y despues caja3. Esto es como dibujar en un papel, lo que dibujemos primero siempre va a estar debajo. Ahora, si queremos cambiar esta logica, usamos z-index. */
+/* .caja2 {
+    background-color: green;
+    position: relative;
+    top: 60px;
+    left: 20px;
+    z-index: 1;
+} */
+
+/* .caja3 {
+    background-color: lightblue;
+    position: relative;
+} */
+
+/* .caja4 {
+    background: yellow;
+} */
+
+
+
+/* La unica manera de poner un hijo por debajo de su padre es poniendo z-index: -1; en el hijo y nada en el padre. Aunque esto nos trae muchos problemas*/
+/* .contenedor1 {
+    margin: 60px;
+    width: 300px;
+    height: 300px;
+    background: blue;
+    position: relative;
+}
+
+.hijo {
+    background: orange;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    top: -20px;
+    left: -20px;
+    z-index: -1 !important;
+} */
+
+
+
+/* Position absolute */
+/* div {
+    width: 160px;
+    height: 160px;
+    display: block;
+    background: yellow;
+}
+
+.caja1 {
+    background-color: orange;
+} 
+
+.caja2 {
+    background-color: green;
+    position: absolute;
+    Opacity es la tranparencia
+    opacity: 0.5;
+    top: 0;
+}
+
+.caja3 {
+    background-color: lightblue;
+}
+
+.caja4 {
+    background: yellow;
+} */
+
+
+
+/* Position static */
+/* div {
+    display: block;
+    background: green;
+    position: absolute;
+}
+
+div div {
+    height: 100px;
+    width: 100px;
+    background: yellow;
+}
+
+.contenedor {
+    position: relative;
+    border: 2px solid red;
+    height: 450px;
+    width: 450px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.caja1 {
+   left: 0;
+} 
+
+.caja2 {
+    right: 0;
+}
+
+.caja3 {
+    right: 0;
+    bottom: 0;
+}
+
+.caja4 {
+    bottom: 0;
+} */
+
+/* La mejor manera de poner en el centro una caja o un elemento es la siguiente */
+/* .caja5 {
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+} */
+
+
+
+/* Vamos a hacer unos cambios a * asi que lo repetimos */
+/* Position fixed */
+/* * {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+body {
+    padding-top: 250px;
+}
+
+.caja-fixed {
+    background: red;
+    position: fixed;
+    margin-top: -250px;
+} */
+
+
+
+/* Position sticky */
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.caja-sticky {
+    background: red;
+    position: sticky;
+    opacity: .4;
+    top: 100px;
+}
+
+
+
+
+
+

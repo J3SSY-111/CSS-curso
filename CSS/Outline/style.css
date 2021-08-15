@@ -1,0 +1,33 @@
+/* Outline 
+Es un shorthand, una propiedad acortada, como border: 1px solid black; cuando esta en border-sizing: content-box; La unica diferencia es que el outline no ocupa espacio, se usa mas bien para resaltar un elemento para localizarlo.
+
+*/
+
+* {
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+/* Lo que aparece alrededor cuando enfocamos un input texto es un outline para resaltar que estamos escribiendo, lo podemos eliminar con outline:none; */
+.inpText {
+    outline: none;
+}
+
+.caja1 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    /* margin:auto; lo que hace es centrarlo */
+    margin: auto;
+    /* podemos ver como el outline de arriba no aparece porque el outline no ocupa espacio como el border, de esta manera no empuja la caja2 hacia abajo y no cambia ningun elemento  */
+    outline: 10px solid blue;
+}
+
+.caja2 {
+    width: 200px;
+    height: 200px;
+    background: yellow;
+    margin: auto;
+}
+

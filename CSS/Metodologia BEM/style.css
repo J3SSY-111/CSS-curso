@@ -1,0 +1,31 @@
+/* Se identifica el padre primero, despues se ponen 2 guiones bajos para marcar el elemento que van a tener en comun la clase y al final podemos poner 2 guiones medios si queremos marcar algun elemento que sea parte de la clase, pero a la misma vez sea especial (un poco diferente a los demas) */
+.contact-form {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.suscriber-form {
+    border: 1px solid green;
+    padding: 20px;
+}
+
+.contact-form__input:first-child {
+    color: red;
+}
+
+.contact-form__input--active {
+    color: brown;
+}
+
+.contact-form__p-h2 {
+    color: red;
+}
+
+.suscriber-form__p-h2 {
+    color: blue;
+}
+
+
+
+

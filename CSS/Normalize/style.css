@@ -1,0 +1,41 @@
+/* Normalize 
+Es un documento que linkeamos bajandolo del internet o con el enlace al buscar normalize.css. Este documento tiene propiedades en css para normalizar la pagina de los cambios default que el cualquier navegador tiene. Nosotros podemos entrar y editar este documento tambien para normalizar nuestros documentos como querramos. Ademas que podemos bajarlo con node al escribir en el terminal "npm install normalize.css". Para corroborar la informacion ir al documento que se encuentra en la carpeta CSS, llamado normalize.css.
+
+La teoria de cajas
+Hay 2 tipos de cajas
+Por Bloque:
+Las cajas que son bloque tienen un ancho total del padre o de la pagina al no tener padre.
+
+Por linea: 
+Son cajas que ocupan solo el espacio de su contenido. Y estas cajas tienen algunas limitaciones: No se les puede dar height ni width, entre otras
+*/
+/* Esto no es codigo para ensenar, es solo para que se vea bien */
+* {
+    font-family: 'Lobster', cursive;   
+    font-weight: 100; 
+}
+
+.contact-form {
+    font-size: 25px;
+}
+
+.contact-form__h2 {
+    font-size: 2em;
+    color: red;
+}
+
+/* Aqui empezamos los tipos de cajas */
+.h2-teoria-de-cajas {
+    display: inline;
+    /* el siguiente codigo no va a funcionar por ser una caja en linea */
+    width: 190px;
+    padding: 20px;
+}
+
+.p-teoria-de-cajas {
+    /* mientras que al ser caja bloque si funciona */
+    height: 400px;
+    width: 190px;
+    padding: 20px;
+}
+

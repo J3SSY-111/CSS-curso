@@ -1,0 +1,25 @@
+/* Propiedades de texto 
+font-size: tamano de letra;
+font-family: tipografia (muchas se ponen con multiples tipografias divididas con comas, es por si no se encuentra la primera, pues usa la segunda);
+line-height: el line-height normal es 1, que seria la letra normal. Cuando cambiamos esto el espacio de la letra se agranda la mitad del valor que querramos hacia arriba y la otra mitad hacia abajo, dejando la letra en el centro ;
+font-weight: el grosor de la letra;
+font-stretch: 
+font-variant:
+*/
+
+/* Tambien linkeamos de google fonts una letra */
+
+* {
+    font-family: 'Lobster', cursive;   
+    font-weight: 100; 
+}
+
+.contact-form {
+    font-size: 25px;
+}
+
+.contact-form__h2 {
+    font-size: 2em;
+    line-height: 1;
+    color: red;
+}
